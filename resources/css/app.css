@@ -1,0 +1,166 @@
+.bg-nav{
+    background-color: #d9d9d9;
+}
+
+.fs-7{
+    font-size: 12px;
+}
+
+.fs-20{
+    font-size: 20px;
+}
+
+.m-carousel{
+    margin-top: 105px;
+    margin-right: 1.5rem;
+    margin-left: 2.2rem;
+}
+
+.m-side-post{
+    margin-top: 105px;
+    margin-right: 1.5rem;
+}
+
+.m-main-post{
+    margin-right: 1.5rem;
+    margin-left: 2.2rem;
+}
+
+.navbar{
+    padding: 10px;
+}
+
+.nav-shadow {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 10px 15px -15px #999;
+}
+
+.nav-top{
+    background-color: #f8f9fa;
+}
+
+.navbar-brand, 
+.nav-link{
+    color: #474646;
+}
+
+.navbar-brand{
+    pointer-events:none;
+}
+
+.navbar-nav > li{
+    margin-left:20px;
+    margin-right:20px;
+  }
+
+.container-nav-top{
+    --bs-gutter-x: 2.85rem;
+    margin-right: calc(var(--bs-gutter-x) * 0.5);
+    margin-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.btn-primary,
+.btn-outline-primary:hover{
+    background-color: #73A7E5;
+    border-color: #73A7E5;
+}
+
+.btn-outline-primary{
+    border-color: #73A7E5;
+    color :#73A7E5;
+}
+
+.nav-text-bold{
+    font-weight: 550;
+}
+
+.input-search{
+    border-right: none;
+}
+
+.form-control-search,
+.btn-search{
+    border-radius: 15px;
+    border-color: #474646;
+    background-color: #f8f9fa;
+    color: #474646;
+}
+
+.form-control-search{
+    border-right: none;
+}
+
+.btn-search{
+    border-left: none;
+}
+
+.form-control-search:focus,
+.btn-search:hover,
+.btn-search:active{
+    outline: none;
+    box-shadow: none;
+    border-color: #474646;
+    background-color: #fff;
+    color: #474646;
+}
+
+.btn-search:active{
+    background-color: #fff !important;
+    border-color: #474646 !important;
+    color: #474646 important;
+}
+
+.btn-outline-secondary-custom{
+    border-color: #474646;
+    color: #474646;
+}
+
+.btn-outline-secondary-custom:hover{
+    background-color: #474646
+}
+
+@media (min-width: 375px) { 
+    .nav-item{
+        margin-left: 20px;
+    }
+    .input-group{
+        margin-left: 4px;
+    }
+}
+
+.title-black{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.title-red{
+    background-color: #F92525;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.title-blue{
+    background-color: #2C79D3;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card-post{
+    border: none;
+}
+
+.card-body-custom{
+    padding: 0;;
+}
