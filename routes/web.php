@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\LandingController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,8 +15,19 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/', [LandingController::class,'index'])->name('landing');
+Route::get('/post-detail/{id}', [LandingController::class,'postDetail'])->name('landing');
+Route::get('/login', function(){
+    return view('blog.login');
+});
+Route::post('/postLogin', [AuthController::class,'login']);
 
-Route::get('/', function () {
-    $post = (object)['title' => 'Other Title'];
-    return view('blog.landing', ['posts' => ['post1', $post, 'post3']]);
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', [BlogController::class,'index']);
+    Route::get('/manage-post', [BlogController::class,'show']);
+    Route::post('/addpost', [BlogController::class,'store']);
+    Route::post('/updatepost/{id}', [BlogController::class,'update']);
+    Route::delete('/deletepost/{id}', [BlogController::class,'destroy']);
+    Route::post('/logout', [AuthController::class,'logout']);
 });
